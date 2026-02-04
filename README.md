@@ -22,6 +22,7 @@ Copy and run this command in your terminal. It will download the latest version 
 ```bash
 curl -L https://github.com/omerardic/bluetooth-autoconnect-fixer/archive/main.tar.gz | tar xz && cd bluetooth-autoconnect-fixer-main && ./bt-autoconnect-manage.sh
 ```
+*Note: This command downloads the project files into a folder named `bluetooth-autoconnect-fixer-main` in your current directory. Once you have installed the service and added your devices, you can safely move or delete this folder.*
 
 **Manual Install (via Git):**
 1.  Clone the repository:
@@ -35,9 +36,9 @@ curl -L https://github.com/omerardic/bluetooth-autoconnect-fixer/archive/main.ta
     ```
 
 3.  **Follow the Menu:**
-    *   **Option 3 (Install/Re-install):** Run this first to set up the systemd service.
-    *   **Option 1 (Add a new device):** Select paired devices from the list to add them to the monitor.
-    *   **Option 2 (Remove a device):** Stop monitoring a specific device.
+    *   **Option 1 (Install Bluetooth Device Auto-Connect Service):** Run this first to set up the background service.
+    *   **Option 2 (Add a new device to monitor):** Select paired devices from the list to enable auto-connection for them.
+    *   **Option 3 (Remove a device from monitored list):** Stop automatically connecting to a specific device.
 
 ## Uninstallation
 To remove the service and all associated files, use the Manager script:
